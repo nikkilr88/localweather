@@ -273,8 +273,7 @@ $(document).ready(function() {
        * API links api for current weather and api2 for daily
        */
 
-      var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f
-';
+      var api = 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial&APPID=ec50a6072ac189dee111acdd3a38ab9f';
 
       var api2 = 'http://api.openweathermap.org/data/2.5/forecast/daily?lat=' + lat + '&lon=' + lon + '&cnt=6&units=imperial&APPID=0f9dcff76057c29f88aed473e06d0138';
 
