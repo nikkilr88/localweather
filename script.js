@@ -46,7 +46,6 @@ $(document).ready(function() {
    * Settings menu
    */
 
-  $('.settings').draggable();
   
   $('.X').click(function() {
     $('.settings').hide();
