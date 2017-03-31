@@ -1,0 +1,160 @@
+<html>   
+
+<head>
+  
+  <title>Local Weather</title>
+  <meta name="viewport" content="width=device-width">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />  
+       <link rel="icon" sizes="192x192" href="https://lh3.googleusercontent.com/9nxoORJ-orbnXrOMH-PEhr92hfemTifgdWnbZVOjM7UbFnuN106vDf1pgA6LvvWBnVwy=w300">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto:100,300" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+
+</head>
+
+<body>
+
+  <!-- Settings box -->
+
+  <div class="settings">
+
+    <span class="X">Close</span>
+    <br />
+
+    <p>Accent color:</p>
+    <br />
+
+    <div class="colors">
+      <div class="color1 opt"></div>
+      <div class="color2 opt"></div>
+      <div class="color3 opt"></div>
+
+
+      <div class="color4 opt"></div>
+      <div class="color5 opt"></div>
+      <div class="color6 opt"></div>
+    </div>
+    <div class="userInput">
+    <input type="text" id="userColor" placeholder="#000000">
+    <button type="button" id="setColor" class="setColor">Set</button>
+    </div>
+  </div>
+
+  <!-- Main nav -->
+
+  <nav class="navmain">
+    <ul>
+      <li><span class="logo"><i class="fa fa-free-code-camp"></i> FCC Weather </span></li>
+      <li> | </li>
+      <li class="f act">°F</li>
+      <li class="c notact">°C</li>
+      <li class="time"> </li>
+      <li class="cog"><i class="fa fa-cog"></i> </li>
+    </ul>
+  </nav>
+
+  <!-- Mobile nav -->
+
+  <nav class="navmobile">
+    <ul>
+      <li><span class="logo"><i class="fa fa-free-code-camp"></i> </span></li>
+      <li> | </li>
+      <li class="f act">°F</li>
+      <li class="c notact">°C</li>
+      <li class="cog"><i class="fa fa-cog"></i> </li>
+    </ul>
+  </nav>
+
+  <!-- Top divs -->
+
+  <div class="contain">
+    <div class="main">
+
+      <div class="loader"></div>
+
+      <section class="sectmain">
+        <span class="temp"></span>
+        <section class="locat">
+          <span class="current"></span>
+          <span class="location"></span>
+        </section>
+      </section>
+
+    </div>
+
+    <div class="main2">
+      <span class="morn padding"></span>
+      <span class="mid padding"></span>
+      <span class="night padding"></span>
+    </div>
+
+  </div>
+
+  <!-- Details text -->
+
+  <div id="details">
+    <span class="details"> Today's Forecast <br /> <i class="fa fa-angle-down"></i></span>
+  </div>
+
+  <!-- Weather section - Hidden until clicked -->
+
+  <div class="weather">
+
+    <div class="sect first lift">
+      <span class="title"><i class="wi wi-day-sunny"></i> Current Weather</span>
+      <div class="container1 curr"></div>
+    </div>
+
+    <div class="sect lift">
+      <span class="title"><i class="wi wi-thermometer"></i> High / Low</span>
+      <div class="container2 hilo"> </div>
+    </div>
+
+    <section class="sect lift">
+      <span class="title"><i class="wi wi-humidity"></i> Humidity</span>
+      <div class="container1 humid"> </div>
+    </section>
+
+    <div class="sect lift">
+      <span class="title"><i class="wi wi-sunrise"></i> Rise / Set</span>
+      <div class="container2 riseSet"> </div>
+    </div>
+
+    <div class="sect lift ">
+      <span class="title"><i class="wi wi-day-windy"></i> Wind</span>
+      <div class="container1 wind"> </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="left">
+      <span class="footertitle">Social Links</span>
+      <p> <a href="#"><i class="fa fa-facebook-square fa-lg"></i></a>
+        <a href="#"><i class="fa fa-twitter-square fa-lg"></i></a>
+        <a href="#"><i class="fa fa-google-plus-square fa-lg"></i></p></a>
+
+        <p>Coded with
+          <3 by Nikki L.R.</p>
+    </div>
+
+    <div class="right">
+      <span class="footertitle">About</span>
+      <p>Local weather app, intermediate front-end development project <br />for <a href="https://freecodecamp.com" target="_blank">Free Code Camp</a></p>
+      <p>Powered by: <a href="https://openweathermap.org/api" target="_blank">OpenWeatherMap</a></p>
+    </div>
+
+  </footer>
+</body>
+
+</html>
