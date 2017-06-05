@@ -339,18 +339,7 @@ nav a {
 .morn,
 .mid,
 .night {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: table;
   font-family: "Roboto";
   font-weight: 300;
   margin: 5px 0;
@@ -373,17 +362,25 @@ nav a {
 .mid .wi,
 .night .wi {
   color: rgba(0, 0, 0, 0.3);
+  display: table-row;
 }
 
 .day {
   font-size: 24px;
+  display: table-row;
   width: 100%;
+}
+
+.day span {
+  display: table-row;
 }
 
 .daytemp {
   font-size: 32px;
   font-family: Raleway;
+  display: table-row;
 }
+
 
 .details {
   display: block;
